@@ -1,0 +1,222 @@
+.training .container {
+  background: url('../assets/images/image_1.jpeg') 50% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+.training .container-40 {
+  width: 24px;
+  height: 24px;
+}
+.training .container-39 {
+  position: relative;
+  margin: 0 20px 914px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.training .container-5 {
+  background: url('../assets/images/image_19.jpeg') 50% / cover no-repeat;
+  margin-right: 16px;
+  width: 64px;
+  height: 64px;
+}
+.training .the-saltwater-room {
+  margin-bottom: 30px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θBold', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+.training .owl-city {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θMedium', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 12px;
+  color: #666666;
+}
+.training .container-6 {
+  margin: 8.5px 0 25.5px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.training .container-4 {
+  margin-top: 0.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.training .container-9 {
+  margin: 4px 0;
+  width: 24px;
+  height: 24px;
+}
+.training .container-13 {
+  width: 32px;
+  height: 32px;
+}
+.training .container-18 {
+  margin: 4px 0;
+  width: 24px;
+  height: 24px;
+}
+.training .container-8 {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 208px;
+  box-sizing: border-box;
+}
+.training .container-23 {
+  margin: 0 15.5px 9.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θMedium', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 12px;
+  color: #333333;
+}
+.training .container-26 {
+  background: #333333;
+  width: 200px;
+  height: 2px;
+}
+.training .container-24 {
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 7.5px 16.5px 0 0;
+  width: 435px;
+  height: 2px;
+  box-sizing: border-box;
+}
+.training .container-27 {
+  margin-bottom: 9.5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θMedium', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 12px;
+  color: #333333;
+}
+.training .container-22 {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.training .container-7 {
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.training .container-2 {
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 16px 16.5px 16px;
+  width: 828px;
+  box-sizing: border-box;
+}
+.training .container-30 {
+  margin-bottom: 8px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θBoldθ3.000;SHMI;Manrope3', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: #333333;
+}
+.training .timer {
+  margin-left: 25.1px;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θMedium', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666666;
+}
+.training .container-28 {
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 37px 0;
+  width: 194px;
+  box-sizing: border-box;
+}
+.training .container-33 {
+  margin: 0 0 8px 1.5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θBoldθ3.000;SHMI;Manrope3', 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: #333333;
+}
+.training .scores {
+  overflow-wrap: break-word;
+  font-family: 'Manrope3θMedium', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666666;
+}
+.training .container-31 {
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 37px 0;
+  width: 194px;
+  box-sizing: border-box;
+}
+.training .container-36 {
+  width: 40px;
+  height: 40px;
+}
+.training .container-34 {
+  background: #D3D4C7;
+  position: relative;
+  display: flex;
+  padding: 28.5px 4px;
+  width: 48px;
+  height: 97px;
+  box-sizing: border-box;
+}
+.training .container-1 {
+  position: relative;
+  margin-top: 841px;
+  display: flex;
+  flex-direction: row;
+  width: 1312px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.training {
+  background: #D3D4C7;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 64px 66px 20px;
+  width: 1440px;
+  box-sizing: border-box;
+}

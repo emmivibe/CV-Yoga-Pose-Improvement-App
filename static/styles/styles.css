@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .menu-container, .poses-container, .playlist-container, .lessons-container, .history-container, .training-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.signin-container, .training-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.signin-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-container input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.signin-container button {
+    padding: 10px;
+    width: 100px;
+    align-self: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 100%;
+}
+
+.menu-item h2 {
+    margin: 10px 0;
+}
+
+.poses-container, .playlist-container, .lessons-container, .history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pose, .playlist-item, .lesson, .history-item {
+    width: 80%;
+    margin: 10px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+}
+
+.pose img, .playlist-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.start-button button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.start-button button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,38 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #d3d3d3; /* Light grey text color */
+}
+
+.menu-container {
+  background: url('../images/image_18.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  text-align: center;
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.menu-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  fill: #d3d3d3; /* Ensure SVG icons are light grey */
+}
+
+.menu-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}

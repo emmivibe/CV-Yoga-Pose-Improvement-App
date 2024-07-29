@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="training-container">
+        <h1>Real-Time Pose Detection</h1>
+        <div class="video-container">
+            <iframe src="{{ url_for('video') }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="start-button">
+            <button onclick="startTraining()">Start</button>
+        </div>
+    </div>
+    <script>
+        function startTraining() {
+            fetch('/start_training', {
+                method: 'POST'
+            }).then(response => {
+                window.location.href = '/video';
+            });
+        }
+    </script>
+</body>
+</html>

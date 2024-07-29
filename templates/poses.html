@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .poses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .pose {
+            text-align: center;
+            margin: 20px;
+        }
+        .pose img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .pose p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="poses-container">
+        <h1>Yoga Poses</h1>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Mountain_Pose.jpg') }}" alt="Mountain Pose">
+            <p>Mountain Pose</p>
+            <button onclick="startPose('tadasan')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Tree_Pose.jpg') }}" alt="Tree Pose">
+            <p>Tree Pose</p>
+            <button onclick="startPose('vrksana')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Child.jpg') }}" alt="Child Pose">
+            <p>Child Pose</p>
+            <button onclick="startPose('balasana')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Triangle_Pose.jpg') }}" alt="Triangle pose">
+            <p>Triangle pose</p>
+            <button onclick="startPose('trikonasana')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Warrior_Pose.jpg') }}" alt="Warrior Pose">
+            <p>Warrior Pose</p>
+            <button onclick="startPose('virabhadrasana')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Downward_Dog.jpg') }}" alt="Downwarddog Pose">
+            <p>Downwarddog Pose</p>
+            <button onclick="startPose('adhomukha')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Corpse_Pose.jpg') }}" alt="Corpse Pose">
+            <p>Corpse Pose</p>
+            <button onclick="startPose('Corpse_Pose')">Start</button>
+        </div>
+        <div class="pose">
+            <img src="{{ url_for('static', filename='images/Cat_Pose.jpg') }}" alt="Cat Pose">
+            <p>Cat Pose</p>
+            <button onclick="startPose('Cat_Pose')">Start</button>
+        </div>
+    </div>
+    <script>
+        function startPose(pose) {
+            fetch('/start_pose_detection', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ pose: pose }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.url) {
+                    window.open(data.url, '_blank', 'width=800,height=600');
+                } else {
+                    alert('Pose not found');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        function stopPoseDetection() {
+            fetch('/stop_pose_detection', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    alert(data.message);
+                    window.close();
+                } else {
+                    alert('Failed to stop detection');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

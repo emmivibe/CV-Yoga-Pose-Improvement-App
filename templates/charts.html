@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pose Accuracy Charts</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('signin') }}">signin</a></li>
+                <li><a href="{{ url_for('menu') }}">Menu</a></li>
+                <li><a href="{{ url_for('poses') }}">Poses</a></li>
+                <li><a href="{{ url_for('playlist') }}">Playlist</a></li>
+                <li><a href="{{ url_for('lessons') }}">Lessons</a></li>
+                <li><a href="{{ url_for('history') }}">History</a></li>
+                <li><a href="{{ url_for('training') }}">Training</a></li>
+            </ul>
+        </nav>
+        <canvas id="accuracyChart"></canvas>
+    </div>
+    <script>
+        const labels = {{ labels|tojson }};
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Pose Accuracy',
+                backgroundColor: {{ colors|tojson }},
+                borderColor: 'rgb(75, 192, 192)',
+                data: {{ values|tojson }},
+            }]
+        };
+
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        const accuracyChart = new Chart(
+            document.getElementById('accuracyChart'),
+            config
+        );
+    </script>
+</body>
+</html>

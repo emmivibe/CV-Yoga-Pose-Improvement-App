@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/menus.css') }}">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-item">
+            <a href="{{ url_for('poses') }}">
+                <img src="{{ url_for('static', filename='vectors/yoga-posture-svgrepo-com.svg') }}" alt="Poses">
+                <h2>Poses</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="{{ url_for('playlist') }}">
+                <img src="{{ url_for('static', filename='vectors/music-player-circle-svgrepo-com.svg') }}" alt="Playlist">
+                <h2>Playlist</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="{{ url_for('lessons') }}">
+                <img src="{{ url_for('static', filename='vectors/copybook-lesson-task-homework-svgrepo-com.svg') }}" alt="Lessons">
+                <h2>Lessons</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="{{ url_for('history') }}">
+                <img src="{{ url_for('static', filename='vectors/calender-svgrepo-com.svg') }}" alt="History">
+                <h2>History</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

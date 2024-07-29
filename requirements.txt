@@ -1,0 +1,14 @@
+Flask==2.0.3
+Flask-SQLAlchemy==2.4.0
+numpy
+opencv-python
+tensorflow
+tensorflow-hub
+matplotlib
+pyttsx3
+gtts
+playsound
+mediapipe
+typing-extensions==4.5.0
+schedule
+flask-mail
